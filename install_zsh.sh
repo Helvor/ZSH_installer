@@ -1,11 +1,11 @@
 #!/bin/bash
 
 if [ $UID == 0 ]; then
-    echo "Must not be root for user : $USER\n"
+    echo "Must not be root for user"
     exit 1
 elif [ $UID != 0 ];
 then
-    echo "User has root privileges\n"
+    echo "User has not root privileges"
 
     read -r -p "Install ZSH ? (y|n) : " choiceZSH
     #to lowercase
