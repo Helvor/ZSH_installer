@@ -13,7 +13,7 @@ then
 
     if [ "$choiceZSH" == "y" ];
     then
-        apt install zsh -y   
+        sudo apt install zsh -y   
     else
         echo "ZSH wasn't installed !\n" 
     fi
