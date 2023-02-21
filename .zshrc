@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 
 prompt_context() {
 # Custom (Random emoji)
-  emojis=("ðŸ¦¦" "ðŸ’©" "ðŸ–•" "âš¡ï¸" "ðŸ”¥" "ðŸ’€" "ðŸ”" "ðŸ‘‘" "ðŸ˜Ž" "ðŸ¸" "ðŸµ" "ðŸ¦„" "ðŸ»" "ðŸš€" "ðŸ’¡" "ðŸŽ‰" "ðŸ¥µ" "ðŸ˜ˆ" "ðŸ’–" "ðŸš¦" "ðŸŒ™")
+  emojis=("🍚" "🏞️" "🍹")#emoji on https://github.com/rothgar/zsh-emoji-aliases/blob/master/emoji.zsh
   RAND_EMOJI_N=$(( $RANDOM % ${#emojis[@]} + 1))
   ip=$(hostname -I)
   prompt_segment yellow default "${emojis[$RAND_EMOJI_N]}"
