@@ -63,32 +63,7 @@ then
 
     echo "--------------------------------"
 
-    echo "Memet config plugins : git, zsh-autosuggestions, colored-man-pages
-    , command-not-found, zsh-syntax-highlighting, fzf, web-search\n"
-
-    read -r -p "Do you want the memet config ? (y|n) : " choiceMemetConfig
-    #to lowercase
-    choiceMemetConfig = $(echo $choiceMemetConfig | tr [:upper:] [:lower:])
-
-    if [ "$choiceMemetConfig" == "y" ];
-    then
-        wget "http://paste.staffe.net/raw/e7DfCFCfx0" -O ~/.zshrc
-        git clone https://github.com/powerline/fonts.git --depth=1
-        cd fonts
-        ./install.sh
-        #clean-up a bit
-        cd ..
-        rm -rf fonts
-
-        echo "Memet config is setup with the theme Agnoster (installed the powerline fonts for it just before)"
-    else
-        echo "Memet config wasn't setup !\n"
-    fi
-
     echo "Running a zsh shell with the command : zsh\n"
-
-    echo "If there's a problem with some plugins for the memet config, you have to installed all 
-    of the plugins proposed here or delete the lines in the .zshrc file (in your home directory)"
 
     echo "Visit https://ohmyz.sh/ if you want to browse the theme and plugins\n"
 
