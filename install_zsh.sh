@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if [ $UID != 0 ]; then
-    echo "Must be root for user : $USER\n"
+if [ $UID == 0 ]; then
+    echo "Must not be root for user : $USER\n"
     exit 1
-elif [ $UID == 0 ];
+elif [ $UID != 0 ];
 then
     echo "User has root privileges\n"
 
