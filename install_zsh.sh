@@ -67,6 +67,14 @@ then
     #clean-up a bit
     cd ..
     rm -rf fonts
+    
+    echo "--------------------------------"
+    
+    echo "Copying the .zshrc into $HOME"
+    
+    cp -i ./.zshrc $HOME
+    
+    echo "Copying done !"
 
     echo "--------------------------------"
 
