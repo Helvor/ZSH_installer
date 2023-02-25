@@ -38,7 +38,7 @@ then
 
         read -r -p "Do you want to install the fonts for the theme ? (recommended) (y|n) : " choiceFONTS
 
-        if [ "${choiceFONTS,,}" =="y" ];
+        if [ "${choiceFONTS,,}" == "y" ];
         then
             git clone https://github.com/powerline/fonts.git --depth=1
             cd fonts
