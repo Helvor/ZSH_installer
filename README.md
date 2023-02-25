@@ -1,9 +1,9 @@
-# ZSH_installer
+![Zsh installer](git_zsh_installer_title.png)
 Bash script for installing ZSH on debian 11 (because it's annoying to do it manually) it takes 2-4 min to do it
 
 > If you don't like all the config from this github, you can change it in the **~/.zshrc** file in the *"prompt_context()"* function at the bottom
 
-![Update](git_zsh_installer_references.png)
+![Update](git_zsh_installer_update.png)
 
 ## v1.1
 - Add warning for the arrow emoji problem
@@ -17,7 +17,7 @@ Bash script for installing ZSH on debian 11 (because it's annoying to do it manu
 - Show the plugins parameters to put into the .zshrc with plugins that you choose
 
 
-# Source for the package
+![References](git_zsh_installer_references.png)
 - official site of OhMyZSH : https://ohmyz.sh/
 - powerline fonts for the agnoster theme : https://github.com/powerline/fonts.git
 - fzf - file finder : https://github.com/junegunn/fzf.git
