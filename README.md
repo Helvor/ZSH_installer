@@ -1,8 +1,7 @@
 # ZSH_installer
 Bash script for installing ZSH on debian 11 (because it's annoying to do it manually) it takes 2-4 min to do it
 
-If you don't like all the config from this github, you can change it in the ~/.zshrc file in the "prompt_context()" function at the bottom
-Have fun
+> If you don't like all the config from this github, you can change it in the **~/.zshrc** file in the *"prompt_context()"* function at the bottom
 
 # Update v1.1
 - Check if user is not root before installing
