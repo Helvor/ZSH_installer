@@ -27,6 +27,8 @@ then
     else
         echo -e "${RED}ZSH wasn't installed !${NC}" 
     fi
+    
+    echo -e "${RED}IF YOU INSTALL OHMYZSH, PLEASE TYPE \"exit\" after the installation to go again in the script${NC}"
 
     read -r -p "Install Oh my Zsh ? (y|n) : " choiceOHMYZSH
 
