@@ -6,14 +6,14 @@ NC='\033[0m'
 
 ZSH_CONFIG="git"
 
-syntax_higlighter_activator=""
+syntax_highlighter_activator=""
 
-if [[ $UID == 0 ]]; then
+if [ $UID == 0 ]; then
     echo -e "${RED}Must not be root - Login to another account or don't use sudo${NC}"
 
     exit 1
 
-elif [[ $UID != 0 ]];
+elif [ $UID != 0 ];
 then
     echo -e "${GREEN}User has not root privileges${NC}"
 
@@ -28,7 +28,7 @@ then
         echo -e "${RED}ZSH wasn't installed !${NC}" 
     fi
 
-    read -r -p "Install Oh my zsh ? (y|n) : " choiceOHMYZSH
+    read -r -p "Install Oh my Zsh ? (y|n) : " choiceOHMYZSH
 
     if [ "${choiceOHMYZSH,,}" == "y" ];
     then
@@ -70,7 +70,7 @@ then
         echo -e "${RED}Auto suggestions wasn't installed !${NC}"
     fi
 
-    read -r -p "Install syntax higlight (recommended) ? (y|n) : " choiceSyntHighlight
+    read -r -p "Install syntax highlight (recommended) ? (y|n) : " choiceSyntHighlight
 
     if [ "${choiceSyntHighlight,,}" == "y" ];
     then
@@ -78,9 +78,9 @@ then
         
         ZSH_CONFIG="$ZSH_CONFIG zsh-syntax-highlighting"
 
-        syntax_higlighter_activator="on"
+        syntax_highlighter_activator="on"
 
-        echo -e "${GREEN}Syntax highligter installed !${NC}"
+        echo -e "${GREEN}Syntax highlighter installed !${NC}"
     else
         echo -e "${RED}Syntax highlight wasn't installed !${NC}"
     fi
@@ -118,9 +118,9 @@ then
 
     echo -e "${GREEN}Your configuration for the plugins :${NC} plugins=($ZSH_CONFIG)\n"
 
-    if [ "${syntax_higlighter_activator,,}" == "on" ];
+    if [ "${syntax_highlighter_activator,,}" == "on" ];
     then
-        echo -e "${GREEN}Since syntax higlighter is installed, you have to copy this line into your $HOME/.zshrc${NC} \n -> ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)\n"
+        echo -e "${GREEN}Since syntax highlighter is installed, you have to copy this line into your $HOME/.zshrc${NC} \n -> ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)\n"
     fi
 
     exit 0
