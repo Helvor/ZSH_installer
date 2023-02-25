@@ -10,6 +10,6 @@ Bash script for installing ZSH (because it's annoying to do it manually)
 
 
 # Source for the package
-official site of OhMyZSH : https://ohmyz.sh/
-powerline fonts for the agnoster theme : https://github.com/powerline/fonts.git
-fzf - file finder : https://github.com/junegunn/fzf.git
+- official site of OhMyZSH : https://ohmyz.sh/
+- powerline fonts for the agnoster theme : https://github.com/powerline/fonts.git
+- fzf - file finder : https://github.com/junegunn/fzf.git
