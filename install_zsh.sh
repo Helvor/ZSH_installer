@@ -110,6 +110,8 @@ then
     if [ "${choiceCONFIG,,}" == "y" ];
     then
         echo -e "\n${GREEN}replacing .zshrc into${NC} -> $HOME/.zshrc \n"
+        
+        mv .zshrc $HOME
     else
         echo -e "\n${RED}Blank config was'nt replaced !${NC}\n"
     fi
