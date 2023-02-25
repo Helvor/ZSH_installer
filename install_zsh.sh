@@ -124,6 +124,8 @@ then
     then
         echo -e "${GREEN}Since syntax highlighter is installed, you have to copy this line into your $HOME/.zshrc${NC} \n -> ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)\n"
     fi
+    
+    echo -e "${RED}If you have problem with this icon -> \ue0b0 - You have to choose a powerline compatible fonts for the preferences in the terminal${NC}"
 
     exit 0
     
