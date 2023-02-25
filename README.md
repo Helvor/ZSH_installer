@@ -14,3 +14,4 @@ Bash script for installing ZSH (because it's annoying to do it manually)
 - official site of OhMyZSH : https://ohmyz.sh/
 - powerline fonts for the agnoster theme : https://github.com/powerline/fonts.git
 - fzf - file finder : https://github.com/junegunn/fzf.git
+- emoji from https://github.com/rothgar/zsh-emoji-aliases/blob/master/emoji.zsh
