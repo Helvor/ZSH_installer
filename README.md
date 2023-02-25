@@ -1,5 +1,5 @@
 # ZSH_installer
-Bash script for installing ZSH (because it's annoying to do it manually) it takes 2-4 min to do it
+Bash script for installing ZSH on debian 11 (because it's annoying to do it manually) it takes 2-4 min to do it
 
 # Update v1.1
 - Check if user is not root before installing
