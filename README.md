@@ -3,7 +3,7 @@ Bash script for installing ZSH on debian 11 (because it's annoying to do it manu
 
 > If you don't like all the config from this github, you can change it in the **~/.zshrc** file in the *"prompt_context()"* function at the bottom
 
-![Update](https://ibb.co/YTDcC07)
+![Update](git_zsh_installer_references.png)
 
 ## v1.1
 - Add warning for the arrow emoji problem
