@@ -120,4 +120,4 @@ prompt_context() {
   prompt_segment yellow default "${emojis[$RAND_EMOJI_N]}"
   prompt_segment black default "%n"
   prompt_segment red default "%U$ip%u"
-}#
+}
