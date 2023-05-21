@@ -8,13 +8,13 @@ ZSH_CONFIG="git"
 
 syntax_highlighter_activator=""
 
-if [ $UID == 0 ]; then
+if [ $UID == 0 ];
+then
     echo -e "${RED}Must not be root - Login to another account or don't use sudo${NC}"
 
     exit 1
 
-elif [ $UID != 0 ];
-then
+else
     echo -e "${GREEN}User has not root privileges${NC}"
 
     read -r -p "Install ZSH ? (y|n) : " choiceZSH
