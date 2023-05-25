@@ -112,12 +112,18 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-prompt_context() {
+# Fancy prompt with emoji
+#prompt_context() {
 # Custom (Random emoji)
-  emojis=("🍚" "🏞️" "🍹")#emoji on https://github.com/rothgar/zsh-emoji-aliases/blob/master/emoji.zsh
-  RAND_EMOJI_N=$(( $RANDOM % ${#emojis[@]} + 1))
-  ip=$(hostname -I)
-  prompt_segment yellow default "${emojis[$RAND_EMOJI_N]}"
-  prompt_segment black default "%n"
-  prompt_segment red default "%U$ip%u"
+#  emojis=("🍚" "🏞️" "🍹")#emoji on https://github.com/rothgar/zsh-emoji-aliases/blob/master/emoji.zsh
+#  RAND_EMOJI_N=$(( $RANDOM % ${#emojis[@]} + 1))
+#  ip=$(hostname -I)
+#  prompt_segment yellow default "${emojis[$RAND_EMOJI_N]}"
+#  prompt_segment black default "%n"
+#  prompt_segment red default "%U$ip%u"
+#}
+
+prompt_context() {
+  prompt_segment red default "%*"
+  prompt_segment black default "%n@%m"
 }
